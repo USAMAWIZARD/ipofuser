@@ -30,6 +30,13 @@ server.get("/",async(req,res)=>{
    res.send('file not found')
 });
 
+server.get("/getip",async(req,res)=>{
+  
+ a=await ipofuser.find()
+   res.send(a)
+});
+
+
 
 
 
